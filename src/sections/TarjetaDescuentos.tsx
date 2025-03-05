@@ -18,14 +18,15 @@ export default function TarjetaDescuentos() {
                         <h2 className="text-2xl font-bold text-gray-100 md:text-3xl">
                             Tarjetas de descuento
                         </h2>
+                        <div className="text-gray-200 text-left">
+                            <p className="mt-4">
+                                Pedí tu tarjeta de descuento para poder acceder a increíbles beneficios en los locales adheridos.
+                            </p>
 
-                        <p className="text-gray-300 mt-4 text-left">
-                            Pedí tu tarjeta de descuento para poder acceder a increíbles beneficios en los locales adheridos.
-                        </p>
-
-                        <p className="text-gray-300 mt-4 text-left">
-                        Para ser beneficiario tenes que acercarse al centro para hacerla en el momento.
-                        </p>
+                            <p className="mt-4 ">
+                                Para ser beneficiario tenes que acercarse al centro para hacerla en el momento.
+                            </p>
+                        </div>
 
                         <div className="mt-8">
                             <Button title="Ver locales adheridos" href={BUTTON_URL} />

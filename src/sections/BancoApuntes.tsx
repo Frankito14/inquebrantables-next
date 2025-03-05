@@ -27,7 +27,7 @@ export default function BancoDeApuntes() {
                         </h2>
 
                         <p className="text-gray-500 mt-4 md:block text-left">
-                            Ingresa al banco de apuntes, una recopilacion de material en la que podras encontrar apuntes, notas y ejercicios para la materia que necesites.
+                            Ingresa al banco de apuntes, una recopilacion de material en la que podras encontrar <b className='text-emerald-600'>apuntes, notas y ejercicios</b> para la materia que necesites.
                         </p>
 
                         <p className="text-gray-500 mt-4 md:block text-left">

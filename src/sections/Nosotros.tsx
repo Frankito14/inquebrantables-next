@@ -26,7 +26,7 @@ export default function Nosotros() {
                     </h2>
 
                     <p className="text-gray-500 mt-4 md:block text-left">
-                    Somos INQUEBRANTABLES, el centro de estudiantes de la UNaHur, agrupación estudiantil autónoma y autogestiva que reivindica la educación pública, no arancelada, inclusiva y de calidad. Vamos a estar acompañándote en este nuevo camino en la UNaHur.
+                    Somos <b className='text-emerald-600'>INQUEBRANTABLES</b>, el centro de estudiantes de la UNaHur, agrupación estudiantil autónoma y autogestiva que reivindica la educación pública, no arancelada, inclusiva y de calidad. Vamos a estar acompañándote en este nuevo camino en la UNaHur.
                     </p>
 
                     <div className="mt-8">

@@ -1,3 +1,4 @@
+import EnterAnimation from '@/animations/EnterAnimation'
 import Image1 from '@/images/local/local1.jpg'
 import Image2 from '@/images/local/local2.jpg'
 import Image3 from '@/images/local/local3.jpg'
@@ -67,6 +68,7 @@ export default function NuestroLocal() {
     return (
         <section>
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+                <EnterAnimation>
                 <header className="text-center">
                     <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Nuestro local</h2>
 
@@ -74,6 +76,7 @@ export default function NuestroLocal() {
                         ¡Conocé el lugar donde podes encontrarnos!
                     </p>
                 </header>
+                </EnterAnimation>
 
                 <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     {

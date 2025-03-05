@@ -21,16 +21,17 @@ const Contacto = () => {
 }
 
 const RedesSociales = () => {
+    const style = "fill-gray-100 w-10 hover:fill-emerald-200 transition"
     return (
         <div className='flex flex-wrap justify-center gap-20'>
             <a href="https://www.instagram.com/inquebrantables.unahur/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" className="fill-gray-300 w-10 hover:fill-emerald-600 transition" viewBox="0 0 16 16"><path d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className={style}  viewBox="0 0 16 16"><path d="M8 5.67C6.71 5.67 5.67 6.72 5.67 8S6.72 10.33 8 10.33S10.33 9.28 10.33 8S9.28 5.67 8 5.67M15 8c0-.97 0-1.92-.05-2.89c-.05-1.12-.31-2.12-1.13-2.93c-.82-.82-1.81-1.08-2.93-1.13C9.92 1 8.97 1 8 1s-1.92 0-2.89.05c-1.12.05-2.12.31-2.93 1.13C1.36 3 1.1 3.99 1.05 5.11C1 6.08 1 7.03 1 8s0 1.92.05 2.89c.05 1.12.31 2.12 1.13 2.93c.82.82 1.81 1.08 2.93 1.13C6.08 15 7.03 15 8 15s1.92 0 2.89-.05c1.12-.05 2.12-.31 2.93-1.13c.82-.82 1.08-1.81 1.13-2.93c.06-.96.05-1.92.05-2.89m-7 3.59c-1.99 0-3.59-1.6-3.59-3.59S6.01 4.41 8 4.41s3.59 1.6 3.59 3.59s-1.6 3.59-3.59 3.59m3.74-6.49c-.46 0-.84-.37-.84-.84s.37-.84.84-.84s.84.37.84.84a.8.8 0 0 1-.24.59a.8.8 0 0 1-.59.24Z" /></svg>
             </a>
             <a href="https://www.youtube.com/channel/UCc8etfYDV-InO9WnTqvfLgw" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" className="fill-gray-300 w-10 hover:fill-emerald-600 transition" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597c-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821c11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className={style} viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597c-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821c11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z" /></svg>
             </a>
             <a href="https://linktr.ee/inquebrantablesunahur" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" className="fill-gray-300 w-10 hover:fill-emerald-600 transition" viewBox="0 0 24 24"><path d="m13.736 5.853l4.005-4.117l2.325 2.38l-4.2 4.005h5.908v3.305h-5.937l4.229 4.108l-2.325 2.334l-5.74-5.769l-5.741 5.769l-2.325-2.325l4.229-4.108H2.226V8.121h5.909l-4.2-4.004l2.324-2.381l4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className={style}  viewBox="0 0 24 24"><path d="m13.736 5.853l4.005-4.117l2.325 2.38l-4.2 4.005h5.908v3.305h-5.937l4.229 4.108l-2.325 2.334l-5.74-5.769l-5.741 5.769l-2.325-2.325l4.229-4.108H2.226V8.121h5.909l-4.2-4.004l2.324-2.381l4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z" /></svg>
             </a>
         </div>
     )
@@ -39,15 +40,15 @@ const RedesSociales = () => {
 
 export default function Footer() {
     return (
-        <footer className="bg-white text-gray-600 text-center">
+        <footer className="bg-emerald-700 text-gray-50 text-center">
             <div className="pt-6">
                 <RedesSociales />
             </div>
-            <hr className="mt-5" />
+            <hr className="mt-5 border-emerald-600" />
             <div className="flex flex-wrap gap-5 justify-evenly items-center">
                 <Contacto />
                 <div className="p-2">
-                    <Image className="w-96 h-full mx-auto mt-3" src={ImageFooter} alt="FooterInfo" />
+                    <Image className="w-96 h-full mx-auto mt-3 drop-shadow-lg" src={ImageFooter} alt="FooterInfo" />
                 </div>
             </div>
         </footer>

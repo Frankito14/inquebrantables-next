@@ -1,3 +1,4 @@
+import EnterAnimation from "@/animations/EnterAnimation"
 
 
 type Faq = {
@@ -9,14 +10,14 @@ const Faq = ({ question, answer }: Faq) => {
     return (
         <div className="space-y-4">
             <details
-                className="group border-s-4 border-emerald-600 bg-white p-6 [&_summary::-webkit-details-marker]:hidden"
+                className="group border-s-4 border-emerald-600 bg-neutral-50 shadow-sm p-6 [&_summary::-webkit-details-marker]:hidden"
             >
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-                    <h2 className="text-lg font-medium text-gray-900">
+                    <h2 className="text-lg font-medium text-gray-600">
                         {question}
                     </h2>
 
-                    <span className="shrink-0 rounded-full bg-emerald-50 p-1.5 text-emerald-600 sm:p-3">
+                    <span className="shrink-0 rounded-full bg-emerald-100 p-1.5 text-emerald-600 sm:p-3">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
@@ -58,19 +59,22 @@ const preguntasFrecuentes: Faq[] = [
 export default function Page() {
     return (
         <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
-            <header className="text-center">
-                <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Preguntas frecuentes</h2>
+            <EnterAnimation>
+                <header className="text-center">
+                    <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Preguntas frecuentes</h2>
 
-                <p className="mx-auto mt-4 max-w-md text-gray-500">
-                    Consultas que respondemos con frecuencia.
-                </p>
-            </header>
-            <div className="grid grid-cols-1 gap-4 m-auto w-auto mt-8">
-                {preguntasFrecuentes.map((faq, index) =>
-                    <Faq key={index} question={faq.question} answer={faq.answer} />
-                )
-                }
-            </div>
+                    <p className="mx-auto mt-4 max-w-md text-gray-500">
+                        Consultas que respondemos con frecuencia.
+                    </p>
+                </header>
+                </EnterAnimation>
+                <div className="grid grid-cols-1 gap-4 m-auto w-auto mt-8">
+                    {preguntasFrecuentes.map((faq, index) =>
+                        <Faq key={index} question={faq.question} answer={faq.answer} />
+                    )
+                    }
+                </div>
+            
         </section>
     )
 }
