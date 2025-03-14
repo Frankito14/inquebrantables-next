@@ -8,7 +8,7 @@ type Faq = {
 
 const Faq = ({ question, answer }: Faq) => {
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 shadow-md">
             <details
                 className="group border-s-4 border-emerald-600 bg-neutral-50 shadow-sm p-6 [&_summary::-webkit-details-marker]:hidden"
             >
@@ -58,7 +58,7 @@ const preguntasFrecuentes: Faq[] = [
 
 export default function Page() {
     return (
-        <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
+        <section id="PreguntasFrecuentes" className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
             <EnterAnimation>
                 <header className="text-center">
                     <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Preguntas frecuentes</h2>

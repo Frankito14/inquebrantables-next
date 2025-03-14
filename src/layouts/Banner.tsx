@@ -9,7 +9,7 @@ export default function Banner() {
     const URL = "https://www.instagram.com/inquebrantables.unahur/"
 
     return (
-        <section className="relative bg-[url('./public/banner.png')] bg-cover bg-center bg-no-repeat">
+        <section className="relative bg-[url('./public/banner.png')] bg-cover bg-local md:bg-fixed bg-center bg-no-repeat">
             <EnterAnimation>
                 <div
                     className="absolute inset-0 "

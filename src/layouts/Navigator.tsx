@@ -13,6 +13,7 @@ import IconInicio from '@/svg/inicio.svg'
 import IconLocal from '@/svg/local.svg'
 import IconFaq from '@/svg/faq.svg'
 import IconSugerencias from '@/svg/sugerencias.svg'
+import iconEnlacesUtiles from '@/svg/enlacesUtiles.svg'
 
 type NavigatorItem = {
     name: string,
@@ -23,7 +24,7 @@ type NavigatorItem = {
 
 const NavigatorLink = ({ name, path, icon, scroll }: NavigatorItem) => {
     return (
-        <Link href={path} scroll={scroll} className="flex justify-start p-2 rounded gap-1 hover:bg-opacity-50 hover:bg-gray-900 ">
+        <Link href={path} scroll={true} className="flex justify-start p-2 rounded gap-1 hover:bg-opacity-50 hover:bg-gray-900 ">
             <Image className="w-4" src={icon} alt={name}/>
             <span className="text-sm">{name}</span>
         </Link>
@@ -34,20 +35,26 @@ const NavigatorLink = ({ name, path, icon, scroll }: NavigatorItem) => {
 const navigatorItems: NavigatorItem[] = [
     {
         name: "Inicio",
-        path: "/",
+        path: "/#Nosotros",
         icon: IconInicio,
         scroll: true
     },
     {
         name: "Local",
-        path: "/NuestroLocal",
+        path: "/NuestroLocal#NuestroLocal",
         icon: IconLocal,
         scroll: true
     },
     {
         name: "FAQ",
-        path: "/PreguntasFrecuentes",
+        path: "/PreguntasFrecuentes#PreguntasFrecuentes",
         icon: IconFaq,
+        scroll: true
+    },
+    {
+        name: "Links",
+        path: "/EnlacesUtiles#EnlacesUtiles",
+        icon: iconEnlacesUtiles,
         scroll: true
     },
     {
